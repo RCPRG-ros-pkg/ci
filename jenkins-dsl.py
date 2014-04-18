@@ -54,5 +54,8 @@ for x in xx:
     print >> f, '      wipeOutWorkspace(true)'
     print >> f, '    }' # git
     print >> f, '  }' # scm
+    print >> f, '  environmentVariables {'
+    print >> f, '    env(\'DEPS\', \'{0}\')'.format(' '.join(x['deps']))
+    print >> f, '  }' # environmentVariables
     print >> f, '}' # job
   
