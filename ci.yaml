@@ -1,24 +1,24 @@
   -
     name: rtt_ros_integration
-    url: https://github.com/orocos/rtt_ros_integration.git
+    url: orocos/rtt_ros_integration.git
     branch: hydro-devel
     deps:
       - orocos_toolchain
   -
     name: orocos_tools
-    url: https://github.com/RCPRG-ros-pkg/orocos_tools.git
+    url: RCPRG-ros-pkg/orocos_tools.git
     branch: hydro-devel
     deps:
       - rtt_ros_integration
   -
     name: cartesian_trajectory_msgs
-    url: https://github.com/RCPRG-ros-pkg/cartesian_trajectory_msgs.git
+    url: RCPRG-ros-pkg/cartesian_trajectory_msgs.git
     branch: master
     deps:
       - rtt_ros_integration
   -
     name: common_controllers
-    url: https://github.com/RCPRG-ros-pkg/common_controllers.git
+    url: RCPRG-ros-pkg/common_controllers.git
     branch: master
     deps:
       - rtt_ros_integration
