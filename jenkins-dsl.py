@@ -47,9 +47,9 @@ for x in xx:
     print >> f, '    git {'
     print >> f, '      remote {'
     print >> f, '        github(\'{0}\')'.format(x['url'])
+    print >> f, '        refspec(\'+refs/pull/*:refs/remotes/origin/pr/*\')'
     print >> f, '      }' # remote
     print >> f, '      branch(\'${sha1}\')'
-    print >> f, '      refspec(\'+refs/pull/*:refs/remotes/origin/pr/*\')'
     print >> f, '      relativeTargetDir(\'src\')'
     print >> f, '      wipeOutWorkspace(true)'
     print >> f, '    }' # git
