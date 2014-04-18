@@ -22,7 +22,7 @@ for x in xx:
   print >> f, '  scm {'
   print >> f, '    git {'
   print >> f, '      remote {'
-  print >> f, '        url(\'{0}\')'.format(x['url'])
+  print >> f, '        github(\'{0}\')'.format(x['url'])
   print >> f, '      }' # remote
   print >> f, '      branch(\'{0}\')'.format(x['branch'])
   print >> f, '      relativeTargetDir(\'src\')'
