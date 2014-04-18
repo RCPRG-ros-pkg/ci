@@ -38,4 +38,21 @@ for x in xx:
   print >> f, '  }' # publishers
   print >> f, '}' # job
   
+  if (not x['external']):
+    print >> f, 'job {'
+    print >> f, '  using \'package_pull_template\''
+    print >> f, '  name \'{0}_pullrequest\''.format(x['name'])
+    print >> f, '  disabled(false)'
+    print >> f, '  scm {'
+    print >> f, '    git {'
+    print >> f, '      remote {'
+    print >> f, '        github(\'{0}\')'.format(x['url'])
+    print >> f, '      }' # remote
+    print >> f, '      branch(\'${sha1}\')'
+    print >> f, '      refspec(\'+refs/pull/*:refs/remotes/origin/pr/*\')'
+    print >> f, '      relativeTargetDir(\'src\')'
+    print >> f, '      wipeOutWorkspace(true)'
+    print >> f, '    }' # git
+    print >> f, '  }' # scm
+    print >> f, '}' # job
   
