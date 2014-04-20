@@ -32,9 +32,15 @@ for x in xx:
   print >> f, '  environmentVariables {'
   print >> f, '    env(\'DEPS\', \'{0}\')'.format(' '.join(x['deps']))
   print >> f, '  }' # environmentVariables
+  print >> f, '  triggers {'
+  if (x['external']):
+    print >> f, '    scm(\'H */4 * * *\')'
+  else:
+    print >> f, '    githubPush()'
+  print >> f, '  }' # triggers
   print >> f, '  publishers {'
   for n in getDownstream(x, xx):
-    print >> f, '  downstream(\'{0}\')'.format(n)
+    print >> f, '  downstream(\'{0}\', \'UNSTABLE\')'.format(n)
   print >> f, '  }' # publishers
   print >> f, '}' # job
   
