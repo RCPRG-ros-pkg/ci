@@ -43,7 +43,7 @@
     deps:
       - rtt_ros_integration
       - common_controllers
-   -
+  -
     name: barrett_hand
     url: RCPRG-ros-pkg/barrett_hand
     branch: hydro-devel
