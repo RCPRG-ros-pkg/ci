@@ -27,3 +27,26 @@
     deps:
       - rtt_ros_integration
       - cartesian_trajectory_msgs
+  -
+    name: orocos_controllers
+    url: RCPRG-ros-pkg/orocos_controllers
+    branch: hydro-devel
+    external: false
+    deps:
+      - rtt_ros_integration
+      - orocos_tools
+  -
+    name: velma_controllers
+    url: RCPRG-ros-pkg/velma_controllers
+    branch: master
+    external: false
+    deps:
+      - rtt_ros_integration
+      - common_controllers
+   -
+    name: barrett_hand
+    url: RCPRG-ros-pkg/barrett_hand
+    branch: hydro-devel
+    external: false
+    deps:
+      - rtt_ros_integration
