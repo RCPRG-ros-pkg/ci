@@ -46,7 +46,7 @@
   -
     name: barrett_hand
     url: RCPRG-ros-pkg/barrett_hand
-    branch: hydro-devel
+    branch: master
     external: false
     deps:
       - rtt_ros_integration
