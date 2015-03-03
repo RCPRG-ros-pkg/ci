@@ -1,7 +1,7 @@
   -
     name: rtt_ros_integration
     url: orocos/rtt_ros_integration
-    branch: hydro-devel
+    branch: indigo-devel
     external: true
     deps:
       - orocos_toolchain
