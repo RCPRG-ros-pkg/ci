@@ -50,3 +50,11 @@
     external: false
     deps:
       - rtt_ros_integration
+  -
+    name: irp6_robot
+    url: RCPRG-ros-pkg/irp6_robot
+    branch: master
+    external: false
+    deps:
+      - rtt_ros_integration
+      - orocos_controllers
