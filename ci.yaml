@@ -58,3 +58,9 @@
     deps:
       - rtt_ros_integration
       - orocos_controllers
+  -
+    name: robot_calibration
+    url: RCPRG-ros-pkg/robot_calibration
+    branch: master
+    external: false
+    deps:
