@@ -63,4 +63,4 @@
     url: RCPRG-ros-pkg/robot_calibration
     branch: master
     external: false
-    deps:
+    deps: []
