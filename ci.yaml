@@ -44,12 +44,19 @@
       - rtt_ros_integration
       - common_controllers
   -
+    name: barrett_hand_msgs
+    url: RCPRG-ros-pkg/barrett_hand_msgs
+    branch: master
+    external: false
+    deps:
+      - rtt_ros_integration
+  -
     name: barrett_hand
     url: RCPRG-ros-pkg/barrett_hand
     branch: master
     external: false
     deps:
-      - rtt_ros_integration
+      - barrett_hand_msgs
   -
     name: irp6_robot
     url: RCPRG-ros-pkg/irp6_robot
