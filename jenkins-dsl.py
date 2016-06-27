@@ -12,7 +12,7 @@ yf = open('ci.yaml', 'r')
 
 xx = yaml.load(yf)
 
-f = open('jenkins.dsl', 'w')
+f = open('jobs.dsl', 'w')
 
 for x in xx:
   print >> f, 'job {'
