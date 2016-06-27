@@ -44,9 +44,8 @@ for x in xx:
   print >> f, '}' # job
   
   if (not x['external']):
-    print >> f, 'job {'
+    print >> f, 'job(\'{0}\') {{'.format(x['name'])
     print >> f, '  using \'package_pull_template\''
-    print >> f, '  name \'{0}_pullrequest\''.format(x['name'])
     print >> f, '  disabled(false)'
     print >> f, '  scm {'
     print >> f, '    git {'
