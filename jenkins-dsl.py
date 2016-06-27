@@ -15,7 +15,7 @@ xx = yaml.load(yf)
 f = open('jobs.dsl', 'w')
 
 for x in xx:
-  print >> f, 'job(\'{0}\') \{'.format(x['name'])
+  print >> f, 'job(\'{0}\') {{'.format(x['name'])
   print >> f, '  using \'package_template\''
   print >> f, '  disabled(false)'
   print >> f, '  scm {'
