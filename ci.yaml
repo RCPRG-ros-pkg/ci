@@ -71,3 +71,11 @@
     branch: master
     external: false
     deps: []
+    
+  -
+    name: ec_hardware
+    url: RCPRG-ros-pkg/ec_hardware
+    branch: master
+    external: false
+    deps:
+      - rtt_ros_integration
